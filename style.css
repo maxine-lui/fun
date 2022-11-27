@@ -20,7 +20,17 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 0.8em; line-height: 1.4; }
+body { margin: 0; font-size: 0.8em; line-height: 1.4; 
+   /* background-image: url('http://media.tumblr.com/4d6f1aa515a008d494966ddc4d1dee45/tumblr_inline_mst5f2widn1qz4rgp.png'); */
+   /* background-image: url('http://media.tumblr.com/5dacd004927da04b74e271b176c3dee0/tumblr_inline_mst5ey9Emu1qz4rgp.png'); */
+   /* background-attachment: fixed;
+   text-align: justify;
+   color: #c0bdb7; */
+   background: white;
+   background-image: linear-gradient(90deg, rgba(211, 211, 211) 10%, transparent 0),
+    linear-gradient(rgba(211, 211, 211) 10%, transparent 0);
+   background-size: 4px 4px;
+}
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -38,9 +48,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #FF0066; }
+a:visited { color: #fe57a1; }
+a:hover { color: #FF9966; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -218,7 +228,7 @@ td{
 }
 
 .project > .meta {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 .project > .meta > .date {
@@ -226,12 +236,14 @@ td{
 
 }
 
-
-
-
-
-
-
+.multicolortext {
+   background-image: linear-gradient(to left, #FF0000, #66CC66, #FF9966, #FFCCCC, #FF0066);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-size: 60px;
+ }
 
 
 
