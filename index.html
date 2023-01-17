@@ -52,7 +52,52 @@
 		
 			
 		<section id="projects">
+			<br>
+			<h2 class="title">Systems Projects</h2>
+			<hr>
+			<div class="description">
+				
+				<!-- Project 1 -->
+				<section class="project">
+					<h3 class="title">Malloc Lab: Writing a Dynamic Storage Allocator</h3>
+					<div class="meta">
+						<b><span class="field">15-213 Intro to Computer Systems Class Project</span>, <span class="date">Spring 2022</span></b>
+					</div>
+					<p class="description"> 
+						Wrote my own version of a dynamic memory allocator consisting of the malloc, 
+						free, realloc, and calloc functions in C. When memory is allocated 
+						through malloc, space on the heap is reserved in the form of blocks. 
+						An allocated block consists of a header and a payload, while a free block 
+						consists of a header, footer, and padding for alignment. Kept track of the 
+						free blocks in the heap by size through a segregated free list structure, 
+						making lookup for a free block in constant time. (3 weeks, 5,000+ lines of 
+						code)
+					</p>
+				</section> <!-- end project description -->
+				<hr>
+				<!-- project 2 -->
+				<section class="project">
+					<h3 class="title">Proxy Lab: Writing a Caching Web Proxy</h3>
+					<div class="meta">
+						<b><span class="field">15-213 Intro to Computer Systems Class Project</span>, <span class="date">Spring 2022</span></b>
+					</div>
+					<p class="description">
+						Created a proxy that accepts incoming connections, reads and 
+						parses requests, forwards requests to web servers, reads the 
+						servers’ responses, and forwards the responses to the corresponding 
+						clients. Used basic HTTP operation and sockets to interact between the 
+						client and server. The proxy dealt with multiple concurrent connections
+						through threads. Used mutexes to prevent race conditions. Added caching 
+						to the proxy using a simple main memory cache of recently accessed web 
+						content. Implemented the cache as a circular, doubly-linked list. 
+						(3 weeks, 800+ lines of code)						
+					</p>
+				</section> <!-- end project description -->
+
+			<hr> 
+			<br>
 			<h2 class="title">WebDev Projects</h2>
+			<hr>
 			<div class="description">
 				
 				<!-- Project 1 -->
@@ -76,7 +121,7 @@
 					</p>
 
 				</section> <!-- end project description -->
-				
+				<hr>
 				<!-- project 2 -->
 				<section class="project">
 					<h3 class="title">Fuel Capital Website Customizations</h3>
@@ -97,6 +142,8 @@
 						handoff materials to guide their marketing team for future changes.						
 					</p>
 				</section> <!-- end project description -->
+				<hr>
+				<br>
 		</section>	
 	</div> <!-- end main content -->
 	</div> <!-- end container -->
